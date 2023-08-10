@@ -9,7 +9,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "E:/code/VScode/DataStructure/99exe/${fileBasenameNoExtension}.exe"
+                "E:/code/VScode/DataStructure/99.exe/${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"

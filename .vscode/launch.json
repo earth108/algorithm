@@ -9,7 +9,7 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/99exe/demo.exe",
+            "program": "${workspaceFolder}/99.exe/demo.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
