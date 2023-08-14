@@ -69,8 +69,17 @@ ElemType GetElem(SqList L , int i )
 }
 
 //按值查找
-ElemType 
-
+int LocateElem(SqList L , ElemType e)
+{
+    for (int i = 0; i < L.length; i++)
+    {
+        if (L.data[i] == e)
+        {
+            return i + 1;  //下标为i , 返回次序i + 1
+        }
+    }
+    return 0;
+}
 
 
 int main()

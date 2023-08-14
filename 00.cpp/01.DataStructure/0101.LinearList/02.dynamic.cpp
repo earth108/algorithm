@@ -32,18 +32,20 @@ void IncreaseSize(SeqList &L , int len)
     free(p);
 }
 
+//按位查找
 ElemType GetElem(SeqList L , int i)
 {
     return L.data[i - 1];
 }
 
+//按值查找
 int LocateElem(SeqList L , ElemType e)
 {
     for (int i = 0; i < L.length; i++)
     {
         if (L.data[i] == e)
         {
-            return i + 1;
+            return i + 1;  //下标为i , 返回次序i + 1
         }
     }
     return 0;
