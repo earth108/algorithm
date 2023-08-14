@@ -33,8 +33,10 @@ void IncreaseSize(SeqList &L , int len)
 
 
 
-
 int main()
 {
-
+    SeqList L;
+    InitList(L);
+    IncreaseSize(L , 5);
+    return 0;
 }
