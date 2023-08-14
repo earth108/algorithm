@@ -46,6 +46,33 @@ bool ListInsert(SqList &L , int i , int e)
     return true;
 }
 
+//删除第i个位置的元素，并用e返回删除的元素的数值
+bool ListDelete(SqList &L , int i , int &e)
+{
+    if (i < 1 || i > L.length)
+    {
+        return false;
+    }
+    e = L.data[i - 1];
+    for (int j  = i; j >= i; j--)
+    {
+        L.data[j - 1] = L.data[j]; 
+    }
+    L.length --;
+    return true;
+}
+
+//按位查找
+ElemType GetElem(SqList L , int i )
+{
+    return L.data[i  -1];
+}
+
+//按值查找
+ElemType 
+
+
+
 int main()
 {
     SqList L;

@@ -2,6 +2,7 @@
 
 using namespace std;
 
+#define ElemType int 
 #define InitSize 10
 
 typedef struct {
@@ -31,6 +32,22 @@ void IncreaseSize(SeqList &L , int len)
     free(p);
 }
 
+ElemType GetElem(SeqList L , int i)
+{
+    return L.data[i - 1];
+}
+
+int LocateElem(SeqList L , ElemType e)
+{
+    for (int i = 0; i < L.length; i++)
+    {
+        if (L.data[i] == e)
+        {
+            return i + 1;
+        }
+    }
+    return 0;
+}
 
 
 int main()
