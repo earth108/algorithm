@@ -11,6 +11,8 @@ typedef struct {
     int length;    //当前长度
 }SeqList;
 
+
+//初始化顺序表
 void InitList(SeqList &L)
 {
     //malloc申请一片连续的存储空间
