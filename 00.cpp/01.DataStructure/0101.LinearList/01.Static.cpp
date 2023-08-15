@@ -82,6 +82,7 @@ int LocateElem(SqList L , ElemType e)
 }
 
 
+
 int main()
 {
     SqList L;
