@@ -22,7 +22,7 @@ bool InitLinkList(LinkList &L)
     return true;
 }
 
-//链表插入
+//带头结点单链表前插入
 bool ListInsert(LinkList &L , int i , ElemType e)
 {
     //判断传入的 i 是否合法
@@ -30,17 +30,6 @@ bool ListInsert(LinkList &L , int i , ElemType e)
     {
         return false;
     }
-    //插入第 1 个结点 ，特殊处理
-    if (i == 1)
-    {
-        LNode *s = (LNode *)malloc(sizeof(LNode));
-        s ->data = e;
-        s -> next = L;
-        L = s;
-        return true;
-    }
-
-    
     LNode *p;      // p 指向当前扫描到的结点
     int j = 0;     // j 表示当前 p 指向的是第几个结点
     p = L;
@@ -64,6 +53,73 @@ bool ListInsert(LinkList &L , int i , ElemType e)
     p -> next = s;
     return true;
 }
+
+//指定结点后插操作   在 p 结点之后 ，插入元素 e
+bool InsertNextNode (LNode *p , ElemType e)
+{
+    if (p == NULL) return false;
+
+    LNode *s = (LNode *)malloc(sizeof(LNode));
+
+    if (s == NULL) return false;
+
+    s -> data = e;
+    s -> next = p -> next;
+    p -> next = s;
+
+    return true;
+}
+
+//指定结点前插操作 ， 在 p 结点之前 ， 插入元素 e
+bool InsertPriorNode (LinkList L , LNode *p , ElemType e)
+{
+    if (p == NULL) return false;
+
+    LNode *s = (LNode *)malloc(sizeof(LNode));
+    s -> data = p -> data;
+    p -> data = e;
+    s -> next = p -> next;
+    p -> next = s;
+
+    return true;
+}
+
+//删除 第 i 个位置元素 ， 并用e返回删除元素的值
+bool ListDelete(LinkList &L , int i , ElemType &e)
+{
+    if (i < 1) return false;
+    LNode *p;
+    int j = 0;
+    while (p != NULL && j < i - 1)
+    {
+        p = p -> next;
+        j ++;
+    }
+
+    if (p == NULL) return false;  //第 i - 1 个结点
+    if (p -> next == NULL) return false;   //第 i 个结点
+
+    LNode *q = p -> next;
+    p -> next = q -> next;
+    e = q -> data;
+    free(q);
+    return true;
+
+}
+
+//删除指定结点
+bool DeleteNode(LNode *p)
+{
+    if (p == NULL) return false;
+    
+    LNode *q = p -> next;
+    p -> data = p -> next -> data;
+    p -> next = q -> next;
+    free(q);
+    return true;
+}
+
+
 
 
 int main()
