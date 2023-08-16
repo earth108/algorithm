@@ -47,8 +47,8 @@ bool DeleteNextDNode(DLinkList p)
     }
     free(q);
     return true;
-
 }
+
 
 // 销毁链表
 void DestoryList(DLinkList &L)
@@ -60,9 +60,6 @@ void DestoryList(DLinkList &L)
     free(L);
     L -> next = NULL;
 }
-
-
-
 
 
 int main()
