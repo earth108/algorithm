@@ -34,6 +34,36 @@ bool InsertNextDNode(DNode *p , DNode *s)
     p -> next = s;
 }
 
+//删除 p 结点的后续结点
+bool DeleteNextDNode(DLinkList p)
+{
+    if (p == NULL) return false;
+    DNode *q = p -> next;
+    if (q == NULL) return false;
+    p -> next = q -> next;
+    if (q -> next != NULL)
+    {
+        q -> next -> prior = p;
+    }
+    free(q);
+    return true;
+
+}
+
+// 销毁链表
+void DestoryList(DLinkList &L)
+{
+    while (L -> next != NULL)
+    {
+        DeleteNextDNode(L -> next);
+    }
+    free(L);
+    L -> next = NULL;
+}
+
+
+
+
 
 int main()
 {
