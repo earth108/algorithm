@@ -107,13 +107,43 @@ bool ListDelete(LinkList &L , int i , ElemType &e)
 
 }
 
+
+//带头结点 按位查找，返回第 i 个元素
+LNode * GetElem(LinkList L , int i)
+{
+    if ( i < 0) return NULL;
+    LNode *p = L;
+    int j = 0;
+    while (p != NULL && j < i)
+    {
+        p = p -> next;
+        j ++;
+    }
+    return p;
+}
+
+//按值查找
+LNode *LocateElem(LinkList L , ElemType e)
+{
+    LNode *p = L;
+    while ( p!= NULL && p -> data != e)
+    {
+        p  = p -> next;
+    }
+    return p;
+}
+
+
+
+
+
 //删除指定结点
 bool DeleteNode(LNode *p)
 {
     if (p == NULL) return false;
     
     LNode *q = p -> next;
-    p -> data = p -> next -> data;
+    p -> data = q -> data;
     p -> next = q -> next;
     free(q);
     return true;
@@ -124,7 +154,7 @@ bool DeleteNode(LNode *p)
 
 int main()
 {
-
+    LinkList L;
 }
 
 
