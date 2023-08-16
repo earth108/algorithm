@@ -144,6 +144,18 @@ LNode *LocateElem(LinkList L , ElemType e)
     return p;
 }
 
+//求表的长度
+int Length(LinkList L)
+{
+    LNode *p = L;
+    int len = 0;
+    while(p != NULL)
+    {
+        p = p -> next;
+        len ++;
+    }
+    return len;
+}
 
 
 
