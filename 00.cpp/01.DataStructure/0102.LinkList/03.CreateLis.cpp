@@ -79,6 +79,9 @@ LinkList List_HeadInsert(LinkList &L)
 }
 
 
+
+
+
 int main()
 {
     LinkList L;
