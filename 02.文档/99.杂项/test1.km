@@ -1,0 +1,99 @@
+{
+    "root": {
+        "data": {
+            "id": "cuvimdmp3ag0",
+            "created": 1692346091626,
+            "text": "高数规划"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cuvimhmfwbk0",
+                    "created": 1692346100318,
+                    "text": "0基础",
+                    "layout_right_offset": {
+                        "x": 2.499999900659162,
+                        "y": -9.999999602635683
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuvinorrhd40",
+                            "created": 1692346194241,
+                            "text": "书",
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cuvinpqul800",
+                            "created": 1692346196362,
+                            "text": "网课"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cuvimjhmx9k0",
+                    "created": 1692346104381,
+                    "text": "基础班",
+                    "layout_mind_offset": {
+                        "x": 443,
+                        "y": 90
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cuvinu7dixs0",
+                            "created": 1692346206069,
+                            "text": "书",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cuviropxofk0",
+                                    "created": 1692346507587,
+                                    "text": "高等数学基础篇"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuviropxtvc0",
+                                    "created": 1692346507587,
+                                    "text": "数学历年真题全精解析基础篇87-08年"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cuviropxjg80",
+                                    "created": 1692346507587,
+                                    "text": "数学基础过关660题"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cuvinutt4ww0",
+                            "created": 1692346207425,
+                            "text": "网课"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic",
+    "version": "1.4.43"
+}
