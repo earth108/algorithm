@@ -14,7 +14,7 @@ typedef struct LNode {
 bool InitLinkList(LinkList &L)
 {
     L = (LNode *)malloc(sizeof(LNode));
-    if (L == NULL)
+    if (L == NULL) //防止空间未分配
     {
         return false;
     }
@@ -106,6 +106,7 @@ bool ListDelete(LinkList &L , int i , ElemType &e)
     return true;
 
 }
+
 
 //删除指定结点
 bool DeleteNode(LNode *p)
