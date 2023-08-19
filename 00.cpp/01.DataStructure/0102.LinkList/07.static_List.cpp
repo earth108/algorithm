@@ -11,14 +11,6 @@ typedef struct Node{
     int next;
 }SLinkList[MaxSize];
 
-bool InitStaticList()
-
-
-
-
-
-
-
 
 
 int main()
