@@ -21,6 +21,7 @@ void InitList(SeqList &L)
     L.MaxSize = InitSize;
 }
 
+
 //增加动态数组的长度
 void IncreaseSize(SeqList &L , int len)
 {
