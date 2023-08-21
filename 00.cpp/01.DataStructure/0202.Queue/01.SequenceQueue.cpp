@@ -23,6 +23,7 @@ bool QueueEmpty(SqQuence Q)
     else return false;
 }
 
+// ---- 循环队列 -----
 
 //入队
 bool EnQuence(SqQuence &Q , ElemType x)
@@ -43,6 +44,21 @@ bool DeQuence(SqQuence &Q , ElemType &x)
 }
 
 
+//获取队头元素 ， 用 x 返回
+bool GetHead(SqQuence Q , ElemType &x)
+{
+    if (Q.rear == Q.front) return false;
+    x = Q.data[Q.front];
+    return true;
+}
+
+//获取队列元素个数
+int GetLength(SqQuence Q)
+{
+    int x;
+    x = (Q.rear + MaxSize - Q.front) % MaxSize;
+    return x;
+}
 
 
 
