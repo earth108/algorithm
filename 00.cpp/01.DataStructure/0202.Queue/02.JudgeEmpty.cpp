@@ -26,17 +26,17 @@ c.增加tag = 0/1 用于标记
 typedef struct{
     ElemType data[MaxSize];
     int front , rear;
-} a_SqQuence;
+} a_SqQueue;
 
 //初始化
-bool a_InitQurnce(a_SqQuence &Q)
+bool a_InitQurnce(a_SqQueue &Q)
 {
     Q.rear = Q.front = 0;
     return true;
 }
 
 //入队
-bool a_EnQuence(a_SqQuence &Q , ElemType x)
+bool a_EnQuence(a_SqQueue &Q , ElemType x)
 {
     if ((Q.rear + 1) % MaxSize == Q.front) return false;
     Q.data[Q.rear] = x;
@@ -45,7 +45,7 @@ bool a_EnQuence(a_SqQuence &Q , ElemType x)
 }
 
 //出队
-bool a_DeQuence(a_SqQuence &Q , ElemType &e)
+bool a_DeQuence(a_SqQueue &Q , ElemType &e)
 {
     if (Q.rear == Q.front) return false;
     e = Q.data[Q.front];
@@ -54,7 +54,7 @@ bool a_DeQuence(a_SqQuence &Q , ElemType &e)
 }
 
 //获取队头元素
-bool a_GetHead(a_SqQuence &Q , ElemType &x)
+bool a_GetHead(a_SqQueue &Q , ElemType &x)
 {
     if (Q.rear == Q.front) return false;
     x = Q.data[Q.front];
@@ -62,7 +62,7 @@ bool a_GetHead(a_SqQuence &Q , ElemType &x)
 }
 
 //获取队列元素个数
-int a_GetLength(a_SqQuence &Q)
+int a_GetLength(a_SqQueue &Q)
 {
     int x = (Q.rear + MaxSize - Q.front) % MaxSize;
     return x;
@@ -79,17 +79,17 @@ typedef struct{
     ElemType data[MaxSize];
     int front , rear;
     int size = 0;
-} b_SqQuence;
+} b_SqQueue;
 
 //初始化
-bool b_InitQurnce(b_SqQuence &Q)
+bool b_InitQurnce(b_SqQueue &Q)
 {
     Q.rear = Q.front = 0;
     Q.size = 0;
     return true;
 }
 //入队
-bool b_EnQuence(b_SqQuence &Q , ElemType x)
+bool b_EnQuence(b_SqQueue &Q , ElemType x)
 {
     if (Q.size == MaxSize) return false;
     Q.data[Q.rear] = x;
@@ -98,7 +98,7 @@ bool b_EnQuence(b_SqQuence &Q , ElemType x)
     return true;
 }
 //出队
-bool b_DeQuence(b_SqQuence &Q , ElemType &e)
+bool b_DeQuence(b_SqQueue &Q , ElemType &e)
 {
     if (Q.size == 0) return false;
     e = Q.data[Q.front];
@@ -107,14 +107,14 @@ bool b_DeQuence(b_SqQuence &Q , ElemType &e)
     return true;
 }
 // 获取队头元素
-bool b_GetHead(b_SqQuence &Q , ElemType &x)
+bool b_GetHead(b_SqQueue &Q , ElemType &x)
 {
     if (Q.size == 0) return false;
     x = Q.data[Q.front];
     return true;
 }
 // 获取队列元素个数
-int b_GetLength(b_SqQuence &Q)
+int b_GetLength(b_SqQueue &Q)
 {
     return Q.size;
 }
@@ -134,19 +134,19 @@ typedef struct{
     ElemType data[MaxSize];
     int front , rear;
     int tag = 0;
-} c_SqQuence;
+} c_SqQueue;
 
 
 
 //初始化
-bool c_InitQurnce(c_SqQuence &Q)
+bool c_InitQurnce(c_SqQueue &Q)
 {
     Q.rear = Q.front = 0;
     Q.tag = 0;
     return true;
 }
 //入队
-bool c_EnQuence(c_SqQuence &Q , ElemType x)
+bool c_EnQuence(c_SqQueue &Q , ElemType x)
 {
     if (Q.rear == Q.front && Q.tag == 1) return false;
     Q.data[Q.rear] = x;
@@ -154,8 +154,9 @@ bool c_EnQuence(c_SqQuence &Q , ElemType x)
     Q.tag = 1;
     return true;
 }
+
 //出队
-bool c_DeQuence(c_SqQuence &Q , ElemType &e)
+bool c_DeQuence(c_SqQueue &Q , ElemType &e)
 {
     if (Q.rear == Q.front && Q.tag == 0) return false;
     e = Q.data[Q.front];
@@ -163,15 +164,17 @@ bool c_DeQuence(c_SqQuence &Q , ElemType &e)
     Q.tag = 0;
     return true;
 }
+
 // 获取队头元素
-bool c_GetHead(c_SqQuence &Q , ElemType &x)
+bool c_GetHead(c_SqQueue &Q , ElemType &x)
 {
     if (Q.rear == Q.front && Q.tag == 0) return false;
     x = Q.data[Q.front];
     return true;
 }
+
 // 获取队列元素个数
-int c_GetLength(c_SqQuence &Q)
+int c_GetLength(c_SqQueue &Q)
 {
     int x = (Q.rear + MaxSize - Q.front) % MaxSize;
     return x;
