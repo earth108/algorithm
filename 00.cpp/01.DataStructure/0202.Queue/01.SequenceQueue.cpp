@@ -19,7 +19,7 @@ void InitQuence(SqQuence &Q)
 //判断队列是否为空
 bool QueueEmpty(SqQuence Q)
 {
-    if (Q.rear += Q.front) return true;
+    if (Q.rear == Q.front) return true;
     else return false;
 }
 
