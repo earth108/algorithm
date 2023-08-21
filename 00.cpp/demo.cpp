@@ -2,51 +2,82 @@
 
 using namespace std;
 
-
 #define ElemType int
 
-
-typedef struct DNode{
+typedef struct StackNode{
     ElemType data;
-    struct DNode *prior , *next;
-}DNode , *DLinkList;
+    StackNode *next;
+} StackNode , *LinkStack;
 
-
-
-// 双链表 在 p 结点之后插入 s 结点
-bool InsertNextDNode(DNode *p , DNode *s)
+//链栈初始化
+bool InitStack(LinkStack &S)
 {
-    s -> next = p -> next;
-    if (p ->next != NULL)
-    {
-        p ->next -> prior = s;
-    }
-    p -> next = s;
-    s -> prior = p;
-}
-
-
-//删除 p 结点的后续结点
-bool DeleteNextDNode(DLinkList p)
-{
-    if (p == NULL) return false;
-    DNode *q = p -> next;
-    p -> next = q -> next;
-    if (q -> next != NULL)
-    {
-        q -> next -> prior = p;
-    }
-    free(q);
+    S -> next = NULL;
     return true;
 }
 
 
 
+//入栈
+bool Push(LinkStack &S , ElemType x)
+{
+    StackNode *p = (StackNode *) malloc (sizeof(StackNode));
+    //StackNode *p = new StackNode;
+    p -> data = x;
+    p -> next = S;
+    S = p;
+    return true;
+}
+
+
+//出栈
+bool Pop(LinkStack &S , ElemType &e)
+{
+    StackNode *p;
+    if (S -> next == NULL) return false;
+    p = S -> next;
+    e = p -> data;
+    S -> next = p -> next;
+    free(p);
+    return true;
+}
+
+
+
+//取栈顶元素
+ElemType GetTop(LinkStack S)
+{
+    if (S != NULL)
+    {
+        return S -> data;
+    }
+}
+
+
+
+
 int main()
 {
-    cout << "Hello World!" << endl;
-    int n;
-    cin >> n;
-    cout << n + 1 << endl;
+    int x;
+    int top;
+    LinkStack S;
+    InitStack(S);
+    Push(S , 3);
+    Push(S , 4);
+    Push(S , 5);
+    Push(S , 6);
+
+    Pop(S , x);
+    cout << x << ' ';
+    Pop(S , x);
+    cout << x << ' ';
+    Pop(S , x);
+    cout << x << ' ';
+    cout << endl;
+
+    top = GetTop(S);
+    cout << " 栈顶元素为：";
+    cout << top;
     return 0;
+
 }
