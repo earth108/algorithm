@@ -9,6 +9,7 @@ typedef struct LinkNode{
     struct LinkNode *next;
 } LinkNode;
 
+//头结点?
 typedef struct{
     LinkNode *front , *rear;
 }LinkQueue;
@@ -65,6 +66,9 @@ bool DeQueue(LinkQueue &Q , ElemType &x)
 
 // ---------------不带头结点----------------
 
+
+
+
 //初始化（不带头结点）
 void InitQueue(LinkQueue &Q)
 {
@@ -88,7 +92,7 @@ void EnQueue(LinkQueue &Q , ElemType x)
     if (Q.front == NULL)
     {
         Q.front = s;
-        Q.rear = s;
+        Q.rear = s; 
     }
     else
     {
@@ -101,7 +105,7 @@ void EnQueue(LinkQueue &Q , ElemType x)
 bool DeQueue(LinkQueue &Q , ElemType &x)
 {
     if (Q.front == NULL) return false;
-    LinkQueue *p = Q.front;
+    LinkNode *p = Q.front;
     x = p -> data;
     Q.front = p -> next;
     if (Q.rear == p)
