@@ -1,0 +1,173 @@
+{
+    "root": {
+        "data": {
+            "id": "cv0un8r4h940",
+            "created": 1692887812476,
+            "text": "day1"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cv0unyd43vk0",
+                    "created": 1692887868225,
+                    "text": "午餐",
+                    "layout_right_offset": {
+                        "x": 3,
+                        "y": 179
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cv0uod2kek80",
+                            "created": 1692887900239,
+                            "text": "低碳水，避免纯面食"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cv0uodtsl740",
+                            "created": 1692887901886,
+                            "text": "午休"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cv0unyxp6z40",
+                    "created": 1692887869470,
+                    "text": "晚餐",
+                    "layout_right_offset": {
+                        "x": -82,
+                        "y": 164
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cv0uoebyye80",
+                            "created": 1692887902985,
+                            "text": "5点左右"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv0utnlth6o0",
+                                    "created": 1692888314992,
+                                    "text": "低碳水，纤维素，高蛋白"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cv0uof8eyyo0",
+                            "created": 1692887904946,
+                            "text": "运动",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cv0uqcw7aao0",
+                                    "created": 1692888056583,
+                                    "text": "左旋肉碱两片"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cv0uqdzth800",
+                                    "created": 1692888058978,
+                                    "text": "跑步3+2"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cv0uu5kfd4o0",
+                                    "created": 1692888354090,
+                                    "text": "拉伸"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cv0usxhmlxs0",
+                    "created": 1692888258142,
+                    "text": "早餐",
+                    "layout_right_offset": {
+                        "x": -128,
+                        "y": -301
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cv0ut5e5q080",
+                            "created": 1692888275347,
+                            "text": "两个鸡蛋"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cv0ut6v2x7k0",
+                            "created": 1692888278547,
+                            "text": "全麦面包"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cv0ut7f2uc00",
+                            "created": 1692888279756,
+                            "text": "黑咖啡"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cv0uui31z3c0",
+                    "created": 1692888381338,
+                    "text": "全天",
+                    "layout_right_offset": {
+                        "x": -167,
+                        "y": -69
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cv0uuln73ns0",
+                            "created": 1692888389086,
+                            "text": "俯卧撑"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cv0uum3r0q80",
+                            "created": 1692888390087,
+                            "text": "哑铃臂屈伸"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "classic",
+    "version": "1.4.43"
+}

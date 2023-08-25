@@ -9,7 +9,6 @@ typedef struct LinkNode{
     struct LinkNode *next;
 } LinkNode;
 
-//头结点?
 typedef struct{
     LinkNode *front , *rear;
 }LinkQueue;
@@ -54,12 +53,6 @@ bool DeQueue(LinkQueue &Q , ElemType &x)
     free(p);
     return true;
 }
-
-
-
-
-
-
 
 
 
