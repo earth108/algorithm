@@ -27,6 +27,7 @@ bool Push(LinkStack &S , ElemType e)
     p -> data = e;
     p -> next = S;    //新节点插入栈顶
     S = p;            //修改栈顶指针为p
+    return true;    
 }
 
 
