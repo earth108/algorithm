@@ -44,11 +44,11 @@ e+辅（除了em / en ）方向向外
 
 前缀（方向向下）：
 
-de 
+de
 
-sub , sup , suf 
+sub , sup , suf
 
-under 
+under
 
 ---
 
@@ -57,8 +57,3 @@ under
 over
 
 sur
-
-test
----
-test1
-test2
