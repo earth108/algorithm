@@ -4,6 +4,8 @@ using namespace std;
 
 #define ElemType int
 
+//中缀表达式转后缀表达式
+
 typedef struct LinkNode {
     ElemType data;
     struct LinkNode *next;
@@ -60,7 +62,7 @@ bool demo(char str[] , int length)
     }
 }
 
-
+ 
 
 
 
