@@ -2,16 +2,16 @@
 
 using namespace std;
 
-typedef struct {
-    int num;
-    int people;
-} Customer;
+int f(int n)
+{
+    if (n == 1 || n == 0) return 1;
+    else return f( n - 1) + f(n - 2);
+}
+
 
 int main()
 {
-    Customer a;
-    a.num = 1;
-    a.people = 2;
-    cout <<sizeof(Customer) << endl;
+    int x = 5;
+    cout << f(x);
     return 0;
 }
