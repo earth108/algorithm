@@ -55,8 +55,7 @@ bool demo(char str[] , int length)
         }
         else
         {
-
-
+            
         }
 
     }
