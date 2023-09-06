@@ -35,7 +35,7 @@ bool Pop(LinkStack &S , ElemType &e)
 {
     StackNode *p;
     if (S -> next == NULL) return false;
-    p = S -> next;
+    p = S;
     e = p -> data;
     S -> next = p -> next;
     free(p);
