@@ -53,6 +53,13 @@ ElemType GetTop(LinkStack S)
     }
 }
 
+//判断栈是否为空
+bool StackEmpty(LinkStack S)
+{
+    if (S -> next == NULL) return true;
+    else return false;
+}
+
 
 
 
