@@ -1,0 +1,97 @@
+{
+    "root": {
+        "data": {
+            "id": "cvm3vk2yes00",
+            "created": 1695046613129,
+            "text": "英语"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cvm3vrctx940",
+                    "created": 1695046628963,
+                    "text": "单词"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvm3w9sm59c0",
+                            "created": 1695046669100,
+                            "text": "四级高频救命词"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvm3xw5dldc0",
+                                    "created": 1695046796125,
+                                    "text": " "
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cvm3xyylz6o0",
+                            "created": 1695046802246,
+                            "text": "基础词"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvm3vs8gsk80",
+                    "created": 1695046630876,
+                    "text": "阅读",
+                    "layout_mind_offset": {
+                        "x": 424.9999936670066,
+                        "y": 95.99999856948853
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvm3wgyi6m80",
+                            "created": 1695046684693,
+                            "text": "四级阅读真题"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cvm3w32tov40",
+                    "created": 1695046654479,
+                    "text": "听力"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cvm3wodxwfk0",
+                            "created": 1695046700864,
+                            "text": "软件：每日英语听力",
+                            "note": "精听：逐句听词，将每句话重复听写，每次将听到的词按照句子顺序写出，听不懂的词空出来，多次听写，最终无法再进一步听出词语后，再对照原句子听写",
+                            "priority": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cvm3wvbqeg00",
+                                    "created": 1695046715968,
+                                    "text": " "
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

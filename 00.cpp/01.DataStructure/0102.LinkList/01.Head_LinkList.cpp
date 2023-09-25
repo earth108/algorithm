@@ -84,6 +84,9 @@ bool InsertPriorNode (LinkList L , LNode *p , ElemType e)
     return true;
 }
 
+
+
+
 //删除 第 i 个位置元素 ， 并用e返回删除元素的值
 bool ListDelete(LinkList &L , int i , ElemType &e)
 {
