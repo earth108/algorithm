@@ -1,0 +1,127 @@
+{
+    "root": {
+        "data": {
+            "id": "cw4m5lmzuzc0",
+            "created": 1696926259357,
+            "text": "MainTopic"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cw4m5n0mxcg0",
+                    "created": 1696926262359,
+                    "text": "个人基本情况"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cw4m63adaw00",
+                            "created": 1696926297776,
+                            "text": "成绩"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cw4m5oe8ac00",
+                    "created": 1696926265357,
+                    "text": "综合素养",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cw4m6a1jl000",
+                            "created": 1696926312480,
+                            "text": "班级活动"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cw4m679n7c80",
+                            "created": 1696926306439,
+                            "text": "志愿活动"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cw4m646dtsw0",
+                            "created": 1696926299711,
+                            "text": "奖项"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cw4portkttc0",
+                                    "created": 1696936225065,
+                                    "text": "挑战杯"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cw4posq9l600",
+                                    "created": 1696936227041,
+                                    "text": "大创"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cw4pothe5dc0",
+                                    "created": 1696936228681,
+                                    "text": "互联网+"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cw4pp06ik1c0",
+                                    "created": 1696936243261,
+                                    "text": "科技立项"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cw4m5ugukv40",
+                    "created": 1696926278576,
+                    "text": "入党动机",
+                    "layout_right_offset": {
+                        "x": -3.333333283662796,
+                        "y": 1.9999999701976776
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cw4mb13ezts0",
+                            "created": 1696926684823,
+                            "text": " "
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cw4m5uwvycg0",
+                    "created": 1696926279546,
+                    "text": "入党承诺"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
